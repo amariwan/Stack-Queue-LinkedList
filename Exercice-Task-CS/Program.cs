@@ -6,9 +6,9 @@ using System.Collections;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using isGited;
+using Exercice_Task_CS;
 
-namespace isGited {
+namespace Exercice_Task_CS {
     class Program {
         static void Main(string[] args) {
             queue que = new queue(true);

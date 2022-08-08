@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using isGited;
+using Exercice_Task_CS;
 
-namespace isGited {
+namespace Exercice_Task_CS {
     class aStack
     {
         public bool makeBigger;

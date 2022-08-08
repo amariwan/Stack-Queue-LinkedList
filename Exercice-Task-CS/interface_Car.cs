@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace isGited {
+namespace Exercice_Task_CS {
 
     interface Werkstatt {
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using isGited;
+using Exercice_Task_CS;
 
-namespace isGited {
+namespace Exercice_Task_CS {
     class withoutRc
     {
         AString astr = new AString();
