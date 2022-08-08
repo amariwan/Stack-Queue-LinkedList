@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projekte\\isGited\\isGited\\isGited.csproj",
-      "projectName": "isGited",
-      "projectPath": "D:\\projekte\\isGited\\isGited\\isGited.csproj",
+      "projectUniqueName": "D:\\projekte\\Exercice-Task-CS\\Exercice-Task-CS\\Exercice-Task-CS.csproj",
+      "projectName": "Exercice-Task-CS",
+      "projectPath": "D:\\projekte\\Exercice-Task-CS\\Exercice-Task-CS\\Exercice-Task-CS.csproj",
       "packagesPath": "C:\\Users\\amariwan\\.nuget\\packages\\",
-      "outputPath": "D:\\projekte\\isGited\\isGited\\obj\\",
+      "outputPath": "D:\\projekte\\Exercice-Task-CS\\Exercice-Task-CS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

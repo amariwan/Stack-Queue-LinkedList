@@ -111,12 +111,32 @@ namespace isGited {
             //    retVal = result;
             //}
 
-            Werkstatt<Bugatti> allgemeineWerkstatt = new Werkstatt<Bugatti>();
-            Console.WriteLine(allgemeineWerkstatt.Info());
+
+            //Werkstatt<IAuto> allgemeineWerkstatt = new Werkstatt<IAuto>();
+            //BenzinAutoWerkstatt<Bugatti> BugattiWerkstatt = new BenzinAutoWerkstatt<Bugatti>();
+            //BenzinAutoWerkstatt<IBenzinAuto> benzinAutoWerkstatt = new BenzinAutoWerkstatt<IBenzinAuto>();
+            //BenzinAutoWerkstatt<IHybridAuto> benzinAutoWerkstatt1 = new BenzinAutoWerkstatt<IHybridAuto>();
 
 
-            Bugatti bugatti = new Bugatti();
-            allgemeineWerkstatt.Info();
+            //Console.WriteLine(statt.Info());
+            //Bugatti bugatti = new Bugatti();
+
+
+
+            LinkedList it = new LinkedList();
+            for (int i = 0; i < 100; i++) {
+                it.Add($"ff{i}");
+            }
+            Console.WriteLine();
+            Console.WriteLine(it.Get("ff13"));
+            Console.WriteLine();
+            Console.WriteLine(it.Gets());
+            Console.WriteLine();
+
+            for (int i = 0; i < 15; i++) {
+                Console.WriteLine(it.Remove($"ff{i}"));
+            }
+
         }
     }
 }
