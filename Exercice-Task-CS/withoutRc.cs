@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using isGited;
+using Exercice_Task_CS;
 
-namespace isGited {
+namespace Exercice_Task_CS {
     class withoutRc
     {
         AString astr = new AString();
@@ -38,7 +38,7 @@ namespace isGited {
                             try
                             {
                                 Console.WriteLine(dirs[y]);
-                                if (isGited(dirs[y]))
+                                if (Exercice_Task_CS(dirs[y]))
                                 {
                                     //Console.WriteLine(dirs[y]);
                                 }
@@ -98,7 +98,7 @@ namespace isGited {
             return "";
         }
 
-        public bool isGited(string dir)
+        public bool Exercice_Task_CS(string dir)
         {
             var p = Process.Start(
                 new ProcessStartInfo("git", "diff")

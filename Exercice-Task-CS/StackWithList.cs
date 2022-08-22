@@ -3,31 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Exercice_Task_CS;
 
 namespace Exercice_Task_CS {
-    class aStack {
-        public bool makeBigger;
-        public aStack(bool _makeBigger) {
-            makeBigger = _makeBigger;
-        }
-
-        aArray<string> aAr = new aArray<string>();
-
-        static string[] stack = new string[5];
+    class StackWithList {
+        
+        LinkedList it = new LinkedList();
         static int top = 0;
+        
         public void push(string Wert) {
-            if (top >= stack.Length) {
-                if (makeBigger == true) {
-                    stack = aAr.IncreaseSize(stack, 10);
-                    stack[top] = Wert;
-                    top++;
-                    return;
-                }
-
-                throw new Exception("Stack ist voll");
-            }
-            stack[top] = Wert;
+            it.Add(Wert);
             top++;
 
         }
@@ -39,7 +23,7 @@ namespace Exercice_Task_CS {
             } else {
                 top--;
             }
-            return stack[top];
+            return it.Get(top);
         }
 
         public string peek() {
@@ -51,14 +35,14 @@ namespace Exercice_Task_CS {
             } else {
                 temp = temp - 1;
             }
-            return stack[temp];
+            return it.Get(temp);
         }
         public string get(int i) {
             if (top <= 0) {
                 //throw new Exception("Stack ist leer");
                 return null;
             } else {
-                return stack[i];
+                return it.Get(i);
             }
         }
     }

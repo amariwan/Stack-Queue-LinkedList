@@ -6,9 +6,9 @@ using System.Collections;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using isGited;
+using Exercice_Task_CS;
 
-namespace isGited {
+namespace Exercice_Task_CS {
     class Program {
         static void Main(string[] args) {
             aStack Opd = new aStack(true);
@@ -26,7 +26,7 @@ namespace isGited {
             //    } else if (input == "%" || input == "/" || input == "*" || input == "+" || input == "-") {
             //        Console.WriteLine("the input is accepted Opt " + input);
             //        Opt.push(input);
-                    
+
             //    } else {
             //        Console.WriteLine("the input is not accepted");
             //    }
@@ -53,7 +53,7 @@ namespace isGited {
             //    int opd1 = int.Parse(num1);
 
             //    if (IsInOpdStackAddition()) {
-                    
+
             //    } else if (IsInOpdStackDivision()) {
 
             //    }else {
@@ -216,19 +216,54 @@ namespace isGited {
             //}
 
 
-            queueWithList quels = new queueWithList();
+            //queueWithList quels = new queueWithList();
 
-            for (int i = 0; i < 100; i++) {
+            //for (int i = 0; i < 100; i++) {
+            //    //aSt.push(i);
+            //    quels.Enqueue($"program {i}");
+            //    Console.WriteLine($"program {i}");
+
+            //}
+
+            //for (int i = 0; i < 120; i++) {
+            //    Console.WriteLine(quels.Dequeue());
+
+            //}
+
+            StackWithList StLs = new StackWithList();
+
+            for (int i = 0; i < 10; i++) {
                 //aSt.push(i);
-                quels.Enqueue($"program {i}");
+                StLs.push($"program {i}");
                 Console.WriteLine($"program {i}");
 
             }
 
-            for (int i = 0; i < 120; i++) {
-                Console.WriteLine(quels.Dequeue());
+            for (int i = 0; i < 12; i++) {
+                Console.WriteLine(StLs.pop());
 
             }
+
+            //aStack aSt = new aStack(false);
+
+
+            //try {
+
+            //    for (int i = 0; i < 5; i++) {
+            //        try {
+            //            aSt.push($"program {i}");
+            //            Console.WriteLine($"program {i}  con");
+            //        } catch {
+            //            throw;
+            //        }
+            //    }
+            //    for (int i = 0; i < 10; i++) {
+            //        Console.WriteLine(aSt.pop());
+            //    }
+
+            //} catch (Exception ex) {
+            //    Console.WriteLine(ex.Message);
+            //}
         }
     }
 }
