@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Exercice_Task_CS;
+using isGited;
 
-namespace Exercice_Task_CS {
-    class aStack
-    {
+namespace isGited {
+    class aStack {
         public bool makeBigger;
-        public aStack(bool _makeBigger)
-        {
+        public aStack(bool _makeBigger) {
             makeBigger = _makeBigger;
         }
 
@@ -18,36 +16,50 @@ namespace Exercice_Task_CS {
 
         static string[] stack = new string[5];
         static int top = 0;
-
-        public void push(string Wert)
-        {
-            if (top >= stack.Length)
-            {
-                if(makeBigger == true)
-                { 
+        public void push(string Wert) {
+            if (top >= stack.Length) {
+                if (makeBigger == true) {
                     stack = aAr.IncreaseSize(stack, 10);
                     stack[top] = Wert;
                     top++;
-                    return ;
+                    return;
                 }
 
                 throw new Exception("Stack ist voll");
             }
             stack[top] = Wert;
             top++;
-            
+
         }
 
-        public string pop()
-        {
+        public string pop() {
             if (top <= 0) {
-                throw new Exception("Stack ist leer");
-                //return "leer";
-            }
-            else {
+                //throw new Exception("Stack ist leer");
+                return null;
+            } else {
                 top = top - 1;
             }
             return stack[top];
+        }
+
+        public string peek() {
+            int temp = top;
+
+            if (top <= 0) {
+                //throw new Exception("Stack ist leer");
+                return null;
+            } else {
+                temp = temp - 1;
+            }
+            return stack[temp];
+        }
+        public string get(int i) {
+            if (top <= 0) {
+                //throw new Exception("Stack ist leer");
+                return null;
+            } else {
+                return stack[i];
+            }
         }
     }
 }

@@ -1,0 +1,16 @@
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.exe
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.deps.json
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.runtimeconfig.json
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.runtimeconfig.dev.json
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.dll
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\ref\Exercice-Task-CS.dll
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\bin\Debug\net5.0\Exercice-Task-CS.pdb
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.csproj.AssemblyReference.cache
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.GeneratedMSBuildEditorConfig.editorconfig
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.AssemblyInfoInputs.cache
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.AssemblyInfo.cs
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.csproj.CoreCompileInputs.cache
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.dll
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\ref\Exercice-Task-CS.dll
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.pdb
+D:\projekte\Exercice-Task-CS\Exercice-Task-CS\obj\Debug\net5.0\Exercice-Task-CS.genruntimeconfig.cache

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Exercice_Task_CS;
+using isGited;
 
-namespace Exercice_Task_CS {
+namespace isGited {
     class map<X, Y>
         where X : class
         where Y : class {

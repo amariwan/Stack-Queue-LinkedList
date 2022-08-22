@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercice_Task_CS {
+namespace isGited {
     class LinkedList {
 
         Item Item = null;
-
-        public void Add(string value) {
+        public int i = 0;
+        public int Add(string value) {
             Item it = new Item();
             it.D = value;
+            it.I = i;
             it.V = Item;
-            
             Item = it;
+            return i++; ;
         }
 
         public bool Remove(string value) {
@@ -32,13 +33,13 @@ namespace Exercice_Task_CS {
             }
             return false;
         }
-        public string Get(string value) {
+        public string Get(int index) {
 
             Item temp = Item;
 
             while (temp != null) {
 
-                if (temp.D == value) {
+                if (temp.I == index) {
                     return temp.D;
                 }
                 temp = temp.V;
@@ -58,6 +59,7 @@ namespace Exercice_Task_CS {
 
     class Item {
         public string D = null;
+        public int I = 0;
         public Item V = null;
 
     }

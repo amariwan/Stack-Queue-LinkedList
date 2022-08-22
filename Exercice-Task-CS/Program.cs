@@ -6,26 +6,103 @@ using System.Collections;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using Exercice_Task_CS;
+using isGited;
 
-namespace Exercice_Task_CS {
+namespace isGited {
     class Program {
         static void Main(string[] args) {
-            queue que = new queue(true);
-            //map<string, string> point = new map<string, string>();
+            aStack Opd = new aStack(true);
+            aStack Opt = new aStack(true);
+            Console.Clear();
+            Console.WriteLine("Hey there! welcome to Aland Calculator.\n");
+            //string input = null;
+            //int numericValue;
+            //while (input != "=") {
+            //    input = Console.ReadLine();
+            //    if (int.TryParse(input, out numericValue)) {
+            //        Console.WriteLine("the input is accepted Opd " + input);
+            //        Opd.push(input);
 
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    //aSt.push(i);
-            //    que.Enqueue($"program {i}");
+            //    } else if (input == "%" || input == "/" || input == "*" || input == "+" || input == "-") {
+            //        Console.WriteLine("the input is accepted Opt " + input);
+            //        Opt.push(input);
+                    
+            //    } else {
+            //        Console.WriteLine("the input is not accepted");
+            //    }
+            //}
+            //int i = 0;
+
+            //while (Opt.get(i) != null) {
+            //    Console.WriteLine("the input is accepted Opt " + Opt.get(i));
+
+            //    i++;
+            //} while (Opd.get(i) != null) {
+            //    Console.WriteLine("the input is accepted Opd " + Opd.get(i));
+
+            //    i++;
+            //}
+            //while (Opd.peek() != null || Opt.peek() != null) {
+            //    string num2 = Opd.pop();
+            //    string num1 = Opd.pop();
+            //    if (num1 == null || num2 == null) {
+            //        Console.WriteLine("fehler");
+            //        return;
+            //    }
+            //    int opd2 = int.Parse(num2);
+            //    int opd1 = int.Parse(num1);
+
+            //    if (IsInOpdStackAddition()) {
+                    
+            //    } else if (IsInOpdStackDivision()) {
+
+            //    }else {
+
+            //    }
 
             //}
 
-            //for (int i = 0; i < 100; i++)
-            //{
+            //bool IsInOpdStackAddition() {
+            //    int i = 0;
+
+            //    while (Opt.get(i) != null) {
+            //        if (Opt.get(i) == "*") {
+            //            return true;
+            //        }
+            //        i++;
+            //    }
+            //    return false;
+            //}
+
+            //bool IsInOpdStackDivision() {
+            //    int i = 0;
+
+            //    while (Opt.get(i) != null) {
+            //        if (Opt.get(i) == "/") {
+            //            return true;
+            //        }
+            //        i++;
+            //    }
+            //    return false;
+            //}
+
+            //queue que = new queue(true);
+            //map<string, string> point = new map<string, string>();
+
+            //for (int i = 0; i < 10; i++) {
+            //    //aSt.push(i);
+            //    que.Enqueue($"program {i}");
+            //    Console.WriteLine($"program {i}");
+
+            //}
+
+            //for (int i = 0; i < 10; i++) {
             //    Console.WriteLine(que.Dequeue());
 
             //}
+
+
+
             //try {
 
             //    for (int i = 0; i < 100; i++) {
@@ -123,20 +200,35 @@ namespace Exercice_Task_CS {
 
 
 
-            LinkedList it = new LinkedList();
+            //LinkedList it = new LinkedList();
+            //for (int i = 0; i < 10; i++) {
+            //    Console.WriteLine(it.Add($"ff{i}"));
+
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine(it.Get(2));
+            //Console.WriteLine();
+            //Console.WriteLine(it.Gets());
+            //Console.WriteLine();
+
+            //for (int i = 0; i < 15; i++) {
+            //    Console.WriteLine(it.Remove($"ff{i}"));
+            //}
+
+
+            queueWithList quels = new queueWithList();
+
             for (int i = 0; i < 100; i++) {
-                it.Add($"ff{i}");
-            }
-            Console.WriteLine();
-            Console.WriteLine(it.Get("ff13"));
-            Console.WriteLine();
-            Console.WriteLine(it.Gets());
-            Console.WriteLine();
+                //aSt.push(i);
+                quels.Enqueue($"program {i}");
+                Console.WriteLine($"program {i}");
 
-            for (int i = 0; i < 15; i++) {
-                Console.WriteLine(it.Remove($"ff{i}"));
             }
 
+            for (int i = 0; i < 120; i++) {
+                Console.WriteLine(quels.Dequeue());
+
+            }
         }
     }
 }

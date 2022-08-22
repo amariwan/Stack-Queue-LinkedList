@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections;
 using System.Threading.Tasks;
 
-namespace Exercice_Task_CS {
+namespace isGited {
 	class AString
 	{
 		public int Length(string value)
