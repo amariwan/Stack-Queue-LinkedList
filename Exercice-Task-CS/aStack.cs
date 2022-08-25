@@ -14,7 +14,7 @@ namespace Exercice_Task_CS {
 
         aArray<string> aAr = new aArray<string>();
 
-        static string[] stack = new string[5];
+        static string[] stack = new string[10];
         static int top = 0;
         public void push(string Wert) {
             if (top >= stack.Length) {
