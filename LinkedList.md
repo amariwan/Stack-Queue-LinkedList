@@ -29,4 +29,4 @@ Eine einfach verknüpfte Liste ist eine Sammlung von Knoten, wobei jeder Knoten 
 
 # Flussdiagram
 
-![a](img/Linkedlist_Diagram.drawio.png)
+![a](img/Linkedlist_Diagram.drawio.svg)
