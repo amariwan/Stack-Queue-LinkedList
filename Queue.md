@@ -18,3 +18,6 @@ Eine weitere wichtige Operation einer Queue ist das Abrufen des Elements an der 
 Der Name  Queue kommt von der Analogie zu einer Kundenschlange bei einer Bank. Der Kunde, der zuerst kommt, wird zuerst bedient, und der Kunde, der später kommt, wird am Ende der Queue eingereiht und später bedient.
 
 ![alt text](img/queue-at-a-bank.png)
+
+# Flussdiagram
+![a](img/Queue_Diagram.drawio.svg)
