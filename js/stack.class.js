@@ -1,12 +1,12 @@
-class aStack {
+class Stack {
     constructor() {
-        this.stack = {};
+        this.stack = [];
         this.head = 0;
         this.top = 0;
     }
 
     push(Wert) {
-        if (this.top >= stack.length) {
+        if (this.top >= this.stack.length) {
             console.log("Stack ist voll");
         }
         this.stack[this.top] = Wert;
