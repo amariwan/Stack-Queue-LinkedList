@@ -5,21 +5,21 @@ class Stack {
         this.top = 0;
     }
 
-    push(Wert) {
+    Push(Wert) {
         this.stack[this.top] = Wert;
         this.top++;
     }
 
-    pop() {
+    Pop() {
         if (this.top <= 0) {
             console.log("Stack ist Leer");
             return null;
-        } 
+        }
         this.top--;
         return this.stack[this.top];
     }
 
-    peek() {
+    Peek() {
         var temp = top;
 
         if (this.top <= 0) {
@@ -30,7 +30,7 @@ class Stack {
         }
         return this.stack[temp];
     }
-    get(i) {
+    Get(i) {
         if (top <= 0) {
             console.log("Stack ist Leer");
             return null;
@@ -38,4 +38,12 @@ class Stack {
             return this.stack[i];
         }
     }
+}
+let s = new Stack();
+for (var i = 0; i < 10; i++) {
+    s.Push(i);
+    console.log("Stack push(" + i + ")");
+}
+for (var i = 0; i < 10; i++) {
+    console.log("Stack pop: " + s.Pop());
 }
