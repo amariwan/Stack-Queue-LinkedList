@@ -36,9 +36,8 @@ namespace Exercice_Task_CS {
             if (top <= 0) {
                 //throw new Exception("Stack ist leer");
                 return null;
-            } else {
-                top--;
             }
+            top--;
             return stack[top];
         }
 
