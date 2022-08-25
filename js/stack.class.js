@@ -6,7 +6,7 @@ class aStack {
     }
 
     push(Wert) {
-        if (this.top >= stack.Length) {
+        if (this.top >= stack.length) {
             console.log("Stack ist voll");
         }
         this.stack[this.top] = Wert;
