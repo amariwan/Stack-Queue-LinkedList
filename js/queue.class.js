@@ -1,22 +1,49 @@
 class Queue {
-    constructor() {
-        this.elements = {};
+    constructor(makeBigger) {
+        this.array = {};
         this.head = 0;
         this.tail = 0;
+        this.makeBigger = makeBigger;
     }
-    enqueue(element) {
-        this.elements[this.tail] = element;
-        this.tail++;
+
+    Move(counter, length) {
+        if (counter > length - 1) {
+            return 0;
+        }
+        return ++counter;
     }
-    dequeue() {
-        const item = this.elements[this.head];
-        delete this.elements[this.head];
-        this.head++;
+
+    Enqueue(element) {
+        if (this.Move(this.tail, this.array.length) == this.head) {
+            if (this.makeBigger == true) {
+                this.array = aAr.IncreaseSize(this.array, 10);
+                this.array[this.tail] = element;
+                this.tail = Move(this.tail, this.array.length);
+                return;
+            }
+            Console.WriteLine("Voll");
+            return;
+        } else {
+            this.array[this.tail] = element;
+            this.tail = this.Move(this.tail, this.array.length);
+        }
+    }
+
+    Dequeue() {
+        if (this.tail == this.head) {
+            return "leer";
+        }
+        const item = this.array[this.head];
+        delete this.array[this.head];
+        this.head = this.Move(this.head, this.array.length);
         return item;
     }
-    peek() {
-        return this.elements[this.head];
+
+    Peek() {
+        return this.array[this.head];
     }
+
+
     get length() {
         return this.tail - this.head;
     }
@@ -25,14 +52,14 @@ class Queue {
     }
 }
 
-let q = new Queue();
-for (let i = 1; i <= 7; i++) {
-    q.enqueue(i);
+let q = new Queue(false);
+for (let i = 0; i < 7; i++) {
+    q.Enqueue(i);
 }
-console.log(q.peek());
+console.log(q.Peek());
 
 console.log(q.length);
 
 while (!q.isEmpty) {
-    console.log(q.dequeue());
+    console.log(q.Dequeue());
 }

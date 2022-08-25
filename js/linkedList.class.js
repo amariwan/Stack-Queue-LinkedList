@@ -10,7 +10,7 @@ class LinkedList {
         this.size = 0;
     }
 
-    add(element) {
+    Add(element) {
         var node = new Node(element);
         var current;
         if (this.head == null)
@@ -25,7 +25,7 @@ class LinkedList {
         this.size++;
     }
 
-    get(element) {
+    Get(element) {
         var current = this.head;
         var prev = null;
         while (current != null) {
@@ -43,17 +43,24 @@ class LinkedList {
         }
         return -1;
     }
+
+    Gets() {
+        var current = this.head;
+
+        while (current != null) {
+            console.log(current.element);
+            current = current.next;
+        }
+        return "leer";
+    }
 }
 
 var ll = new LinkedList();
 
-
-ll.add(10);
-
-ll.add(20);
-ll.add(30);
-ll.add(40);
-ll.add(50);
+for (var i = 0; i < 10; i++) {
+    ll.Add(i);
+}
 
 
-console.log(ll.removeElement(50));
+console.log(ll.Get(50));
+console.log(ll.Gets());
