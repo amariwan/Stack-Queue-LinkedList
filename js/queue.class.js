@@ -21,7 +21,7 @@ class Queue {
                 this.tail = Move(this.tail, this.array.length);
                 return;
             }
-            Console.WriteLine("Voll");
+            console.log("Voll");
             return;
         } else {
             this.array[this.tail] = element;
@@ -53,13 +53,16 @@ class Queue {
 }
 
 let q = new Queue(false);
-for (let i = 0; i < 7; i++) {
+for (var i = 0; i < 10; i++) {
     q.Enqueue(i);
+    console.log("Queue Enqueue(" + i + ")");
+
 }
+
 console.log(q.Peek());
 
 console.log(q.length);
 
 while (!q.isEmpty) {
-    console.log(q.Dequeue());
+    console.log("Queue Dequeue: " + q.Dequeue());
 }
