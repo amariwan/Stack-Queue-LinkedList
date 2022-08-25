@@ -26,3 +26,6 @@ Die pop()Methode entfernt das Element am Ende des Arrays und gibt das Element an
 ![t](img/JavaScrippt-Stack-Pop.png)
 
 Anfänglich hat der Stack 5 Elemente. Die pop()Methode entfernt das Element am Ende des Arrays, dh an der Spitze des Stapels, eines nach dem anderen. Nach fünf Operationen ist der Stack leer.
+
+# Flussdiagram
+![a](img/Stack_Diagram.drawio.svg)
