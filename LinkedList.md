@@ -26,3 +26,6 @@ Es verwendet mehr Speicher als Arrays aufgrund des Speicherplatzes, der von ihre
 Eine einfach verknüpfte Liste ist eine Sammlung von Knoten, wobei jeder Knoten zwei Teile hat: Daten und einen Zeiger auf den nächsten Knoten. Die Liste endet mit einem Knoten, der auf zeigt null.
 
 ![a](img/simple_linkedlist.png)
+
+Flussdiagram
+![a](img/Linkedlist_Diagram.drawio.png)
