@@ -14,9 +14,8 @@ class Stack {
         if (this.top <= 0) {
             console.log("Stack ist Leer");
             return null;
-        } else {
-            this.top--;
-        }
+        } 
+        this.top--;
         return this.stack[this.top];
     }
 
