@@ -1,7 +1,4 @@
-# Exercice Task CS
-
-
-Stack und Queue in LinkedList C#
+# Stack Queue LinkedList 
 
 I know there are many people already writing about data structures topics out there, but I believe the best and fast way to learn for me is to write an article about it. For that reason, I decided to have a journal of each data structure topic.
 
@@ -45,7 +42,7 @@ Initially the stack has 5 elements. The pop() method removes the element at the 
 
 Now that we understand the concept let’s implement a stack with an array. There is more that one way of achieving a stack.
 
-Here is my version:
+Here is my version in C#:
 
 
 ```C#
@@ -123,7 +120,7 @@ A Queue is similar to stack but works the opposite way. First In First Out (FIFO
 
 There are two terms in a queue; an enqueue and dequeue. An enqueue is the insertion, and a dequeue is the deletion of an element. Now we have the bigger picture, let’s dive into the implementation part. Again, there are many ways of implementing queues.
 
-Here is my version:
+Here is my version in C#:
 
 ```C#
    class queue {
@@ -192,6 +189,8 @@ A linked list is an ordered collection of data items. A data item can be represe
 </div>
 <br>
 The head pointing(reference) to the first node (element) in the linked list also includes the entry of the linked list. The last node of the list points to null, which is also the tail. The tail is a particular node, where the next pointer is always pointing or reference to null, indicating the end of the list. If the list is empty, the head points to the null.
+
+Linked List visualization in javascript:
 
 ```Js
 const Linkedlist = {
