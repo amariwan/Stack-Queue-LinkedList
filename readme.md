@@ -108,3 +108,65 @@ Here is my version:
         }
     }
 ```
+
+
+# What is a Queue?
+
+A Queue is similar to stack but works the opposite way. First In First Out (FIFO) the same as Last In Last Out (LILO). In terms of real-life situations, think about waiting in a line at the DMV. The first person usually gets in is the first person often to get out. Queues used where:
+
+- In an online video game where someone will join last, and someone will join first.
+- Uploading resources (download and upload something in your computer depending on the size of the file)
+- Background tasks on your computer
+- Printing/Task processing (a printer can only handle one thing at a time on a time, and whoever hit the print first in the public library that person will get his/her stuff print first)
+
+There are two terms in a queue; an enqueue and dequeue. An enqueue is the insertion, and a dequeue is the deletion of an element. Now we have the bigger picture, let’s dive into the implementation part. Again, there are many ways of implementing queues.
+
+Here is my version:
+
+```C#
+   class queue {
+        public bool makeBigger;
+        public queue(bool _makeBigger) {
+            makeBigger = _makeBigger;
+        }
+
+        aArray<string> aAr = new aArray<string>();
+
+        static string[] array = new string[5];
+
+        static int tail = 0;
+        static int head = 0;
+
+        public void Enqueue(string Wert) {
+            if (Move(tail, array.Length) == head) {
+                if (makeBigger == true) {
+                    array = aAr.IncreaseSize(array, 10);
+                    array[tail] = Wert;
+                    tail = Move(tail, array.Length);
+                    return;
+                }
+                Console.WriteLine("Voll");
+                return;
+            } else {
+                array[tail] = Wert;
+                tail = Move(tail, array.Length);
+            }
+        }
+
+        public string Dequeue() {
+            string answer = "";
+            if (tail == head) {
+                return "leer";
+            }
+            answer = array[head];
+            head = Move(head, array.Length);
+            return answer;
+        }
+        private int Move(int counter, int length) {
+            if (counter > length - 1) {
+                return 0;
+            }
+            return ++counter;
+        }
+    }
+```
