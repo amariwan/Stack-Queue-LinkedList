@@ -22,7 +22,7 @@ A stack has many applications. For example, the easiest way is to reverse a word
 - Undo/Redo, (those “control + z” or “command + z”)
 - Routing route(the history object) in front end framework such as react
 
-# push()-Method
+## push()-Method
 
 The push() method can be used to add one or more elements to the end of the array. The push() method returns the value of the length property, which specifies the number of elements in the array.
 
@@ -32,7 +32,7 @@ The following figure illustrates each step in the above script.
 
 Initially the stack is empty. Each time call the push() method to add a number to the stack. After 5 calls the stack has 5 elements.
 
-# pop()-Method
+## pop()-Method
 
 
 The pop()method removes the element at the end of the array and returns the element to the caller. If the array is empty, the pop() method returns undefined.
@@ -119,6 +119,8 @@ A Queue is similar to stack but works the opposite way. First In First Out (FIFO
 - Background tasks on your computer
 - Printing/Task processing (a printer can only handle one thing at a time on a time, and whoever hit the print first in the public library that person will get his/her stuff print first)
 
+![alt text](img/JavaScript-Queue-Illustration.png)
+
 There are two terms in a queue; an enqueue and dequeue. An enqueue is the insertion, and a dequeue is the deletion of an element. Now we have the bigger picture, let’s dive into the implementation part. Again, there are many ways of implementing queues.
 
 Here is my version:
@@ -170,3 +172,37 @@ Here is my version:
         }
     }
 ```
+Another important operation of a queue is to retrieve the element at the front called peek . Unlike the dequeue operation, the peek operation returns the element at the front without changing the queue.
+
+The name queue comes from the analogy to a customer queue at a bank. The customer who comes first is served first, and the customer who comes later is placed at the end of the queue and served later.
+
+![alt text](img/queue-at-a-bank.png)
+
+---
+# What is a Linked List?
+
+A linked list is an ordered collection of data items. A data item can be represented as a node in a linked list. Each node consists of two parts: Data & pointer to the next node .
+
+Unlike arrays, data elements are not stored in contiguous locations. The data elements or nodes are linked using pointers, hence called a linked list .
+
+A linked list has the following properties: 
+- Successive nodes are connected by pointers.
+- The last node points to zero.
+- A pointer is kept at the head pointing to the first node of the list.
+- A linked list can grow and shrink during the execution of the program.
+- It can be made as long as necessary.
+- It allocates memory as the list grows. Unlike arrays, which have a fixed size. Therefore, the upper limit on the number of elements must be known in advance. In general, the allocated memory is equal to the upper limit regardless of usage. This is one of the main advantages of using a linked list over an array.
+
+## Another advantage of a linked list
+
+Unlike an array, which stores data contiguously in memory, a linked list can easily insert or remove nodes from the list , without reorganizing the entire data structure.
+
+Few disadvantages: Random access to data elements is not allowed. Nodes must be accessed sequentially, starting with the first one. Therefore, the search process in a linked list is slow. It uses more memory than arrays because of the memory used by their pointers.
+
+## Simple linked list
+
+A simply linked list is a collection of nodes, where each node has two parts: Data and a pointer to the next node. The list ends with a node that points to zero.
+
+![a](img/simple_linkedlist.png)
+
+It is about the implementation of stack and queue in an array and linked list. Thanks for reading and I hope you can learn something from the article.
