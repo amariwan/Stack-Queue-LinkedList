@@ -60,5 +60,9 @@ namespace Exercice_Task_CS {
                 return stack[i];
             }
         }
+
+        public void clean(){
+            stack = new string[10];
+        }
     }
 }
