@@ -181,7 +181,56 @@ The name queue comes from the analogy to a customer queue at a bank. The custome
 ---
 # What is a Linked List?
 
-A linked list is an ordered collection of data items. A data item can be represented as a node in a linked list. Each node consists of two parts: Data & pointer to the next node .
+A linked list is an ordered collection of data items. A data item can be represented as a node in a linked list. Each node consists of two parts: Data & pointer to the next node. Check the illustration down below:
+<div style="display: flex; flex-direction: row; margin-top: 56px;" >
+<img src="img/Linked_list.png"
+     alt="Markdown Monster icon"
+     style="float: left;width: 51.24%;  margin-right: 10px;" />
+     <img src="img/ArrayVS.png"
+     alt="Markdown Monster icon"
+     style="float: left;width: 51.24%;  margin-right: 10px; " />
+</div>
+<br>
+The head pointing(reference) to the first node (element) in the linked list also includes the entry of the linked list. The last node of the list points to null, which is also the tail. The tail is a particular node, where the next pointer is always pointing or reference to null, indicating the end of the list. If the list is empty, the head points to the null.
+
+```Js
+const Linkedlist = {
+    head: {
+        value: 6
+        next: {
+            value: 10                                             
+            next: {
+                value: 12
+                next: {
+                    value: 3
+                    next: null	
+                    }
+                }
+            }
+        }
+    },
+    tail:{
+        value:null,
+        next:null
+    }
+}
+```
+
+## Advantage
+  The insertion and deletion operation in the linked list is O(1) time complexity faster than the array. Unlike in an array, nodes are also easy to remove and add to the linked list without reorganizing the entire data structure.
+
+
+## Disadvantage
+- The search operation is slower than the array since nodes need to access starting from the first node and go through each node at a time to find the element. In contrast, array, we can access the data index element randomly (ex: array[4], not in the linked list case).
+- Uses more memory to store additional pointers for linked lists than in arrays.
+
+## Three types of linked list
+- **Singly Linked Lists**: each node only pointing to the next node. The above example is all singly-linked lists.
+- **Doubly Linked Lists**: each node has two pointers, a pointer to the next node and a pointer to the previous node.
+- **Circular Linked Lists**: Similar to a singly linked list except the last node points to the first node of the list, forming a loop.
+ 
+![alt text](img/typeoflinkedlist.png)
+
 
 Unlike arrays, data elements are not stored in contiguous locations. The data elements or nodes are linked using pointers, hence called a linked list .
 
@@ -204,5 +253,10 @@ Few disadvantages: Random access to data elements is not allowed. Nodes must be 
 A simply linked list is a collection of nodes, where each node has two parts: Data and a pointer to the next node. The list ends with a node that points to zero.
 
 ![a](img/simple_linkedlist.png)
+
+
+
+Resources:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WwfhLC16bis/0.jpg)](https://www.youtube.com/watch?v=WwfhLC16bis)
 
 It is about the implementation of stack and queue in an array and linked list. Thanks for reading and I hope you can learn something from the article.
