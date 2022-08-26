@@ -185,10 +185,10 @@ A linked list is an ordered collection of data items. A data item can be represe
 <div style="display: flex; flex-direction: row; margin-top: 56px;" >
 <img src="img/Linked_list.png"
      alt="Markdown Monster icon"
-     style="float: left;width: 51.24%;  margin-right: 10px;" />
+     style="float: left;width: 300px;  margin-right: 10px;" />
      <img src="img/ArrayVS.png"
      alt="Markdown Monster icon"
-     style="float: left;width: 51.24%;  margin-right: 10px; " />
+     style="float: left;width: 300px;  margin-right: 10px; " />
 </div>
 <br>
 The head pointing(reference) to the first node (element) in the linked list also includes the entry of the linked list. The last node of the list points to null, which is also the tail. The tail is a particular node, where the next pointer is always pointing or reference to null, indicating the end of the list. If the list is empty, the head points to the null.
