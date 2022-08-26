@@ -106,6 +106,10 @@ Here is my version in C#:
     }
 ```
 
+# Flussdiagram
+
+![a](img/Stack_Diagram.drawio.svg)
+
 
 # What is a Queue?
 
@@ -175,6 +179,10 @@ The name queue comes from the analogy to a customer queue at a bank. The custome
 
 ![alt text](img/queue-at-a-bank.png)
 
+
+# Flussdiagram
+
+![a](img/Queue_Diagram.drawio.svg)
 ---
 # What is a Linked List?
 
@@ -253,6 +261,9 @@ A simply linked list is a collection of nodes, where each node has two parts: Da
 
 ![a](img/simple_linkedlist.png)
 
+# Flussdiagram
+
+![a](img/Linkedlist_Diagram.drawio.svg)
 
 
 Resources:
