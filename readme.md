@@ -256,6 +256,8 @@ A simply linked list is a collection of nodes, where each node has two parts: Da
 
 
 Resources:
+
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WwfhLC16bis/0.jpg)](https://www.youtube.com/watch?v=WwfhLC16bis)
 
 It is about the implementation of stack and queue in an array and linked list. Thanks for reading and I hope you can learn something from the article.
