@@ -15,7 +15,7 @@ namespace Exercice_Task_CS {
             it.I = i;
             it.V = Item;
             Item = it;
-            return i++; ;
+            return it; 
         }
 
         public bool Remove(string value) {
