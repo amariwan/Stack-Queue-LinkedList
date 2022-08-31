@@ -1,4 +1,5 @@
-# Stack Queue LinkedList 
+<h1 align="center">Stack Queue LinkedList</h1>
+
 
 I know there are many people already writing about data structures topics out there, but I believe the best and fast way to learn for me is to write an article about it. For that reason, I decided to have a journal of each data structure topic.
 
